@@ -171,11 +171,14 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  background: #2b6a8f;
+  color: #fff;
+  border-bottom: 5px solid #ffffff;
+  display: inline-block;
+  transition: background 0.3s ease-in-out;
 }
 
 
-.navbar .dropdown ul {
+.Wavbar .dropdown ul {
   display: block;
   position: absolute;
   left: 5px;
@@ -827,21 +830,14 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Clients Section
+# Clients
 --------------------------------------------------------------*/
-.clients .swiper-slide img {
-  opacity: 0.5;
-  transition: 0.3s;
-  filter: grayscale(100);
-}
-
-.clients .swiper-slide img:hover {
-  filter: none;
-  opacity: 1;
-}
-
-.clients .swiper-wrapper {
-  height: auto;
+.clients {
+  padding: 80px 0;
+  background: url("../img/logos/fundo2.png") fixed no-repeat center;
+  background-position: center;
+  background-size: cover;
+  padding-top: 80px;
 }
 
 .clients .swiper-pagination {
@@ -852,14 +848,25 @@ section {
 .clients .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
+  background-color: #fff;
   opacity: 1;
-  background-color: color-mix(in srgb, #212529, transparent 80%);
+  border: 1px solid #46736E;
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0d83fd;
+  background-color: #3A8C84;
 }
 
+.clients .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+  filter: grayscale(100);
+}
+
+.clients .swiper-slide img:hover {
+  opacity: 1;
+  filter: none;
+}
 
 /*--------------------------------------------------------------
 # Services Section
