@@ -1051,8 +1051,7 @@ section {
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  background: url(../img/servicos.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1063,7 +1062,6 @@ section {
 
 .page-title:before {
   content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
   position: absolute;
   inset: 0;
 }
@@ -1072,6 +1070,11 @@ section {
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: #fff;
+}
+
+.page-title p{
+  color: #fff;
 }
 
 .page-title .breadcrumbs ol {
@@ -1087,13 +1090,14 @@ section {
 
 .page-title .breadcrumbs ol li+li {
   padding-left: 10px;
+  color: #fff;
 }
 
 .page-title .breadcrumbs ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: #fff;
 }
 
 
