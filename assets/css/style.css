@@ -95,6 +95,24 @@ h6 {
   font-weight: 500;
 }
 
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  transition: all 0.4s;
+}
+
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -175,6 +193,12 @@ h6 {
   max-height: 50px;
 }
 
+@media (max-width: 740px) {
+  #header .logo img {
+    max-height: 35px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -229,17 +253,17 @@ h6 {
 }
 
 
-.Wavbar .dropdown ul {
+.navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 5px;
+  right: 15px;
   top: calc(100% + 30px);
   margin: 5px 0 0 0;
   padding: 10px 0;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #14264f;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 15px;
@@ -344,7 +368,7 @@ h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #ffffff;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -360,7 +384,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #fff;
+  color: #000000;
 }
 
 .navbar-mobile .getstarted,
@@ -386,6 +410,7 @@ h6 {
 
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
+  color: #000;
 }
 
 .navbar-mobile .dropdown ul a i {
@@ -395,7 +420,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #fff;
+  color: #000000;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -486,9 +511,11 @@ h6 {
   }
 }
 
-@media (max-width: 768px) {
-  #hero .carousel-container {
-    height: 90vh;
+@media (max-width: 740px) {
+  #hero {
+    margin-top: 10px;
+    width: 100%;
+    height: 23vh;
   }
 
   #hero h2 {
@@ -912,6 +939,7 @@ section {
   opacity: 0.5;
   transition: 0.3s;
   filter: grayscale(100);
+  max-width: 20vh;
 }
 
 .clients .swiper-slide img:hover {
@@ -1073,7 +1101,7 @@ section {
   color: #fff;
 }
 
-.page-title p{
+.page-title p {
   color: #fff;
 }
 
